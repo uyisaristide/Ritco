@@ -1,0 +1,26 @@
+{
+  "welcome": {
+    "title": "Securely book your trip’s Seats/Tickets",
+    "depDistrict": "Departure District",
+    "depLocation": "Departure Location",
+    "destDistrict": "Destination District",
+    "destLocation": "Destination Location",
+    "search": "Search",
+    "results": "Results",
+    "departure": "Departure :",
+    "destination": "Destination :",
+    "time": "Time :",
+    "fare": "Fare :"
+  },
+  "profile": {
+    "title": "My account",
+    "tickets": "My tickets",
+    "notifications": "Notifications",
+    "language": "Change language",
+    "edit": "Edit profile",
+    "logout": "Logout",
+    "delete": "Delete account",
+    "alert": "Do you want to logout from your account?",
+    "cancel": "Cancel"
+  }
+}

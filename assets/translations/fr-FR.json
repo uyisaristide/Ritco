@@ -1,0 +1,26 @@
+{
+  "welcome": {
+    "title": "Gura itike y'urugendo bikoroheye",
+    "depDistrict": "Akarere uherereyemo",
+    "depLocation": "Agace uherereyemo",
+    "destDistrict": "Akarere ugiyemo",
+    "destLocation": "Agace ugiyemo",
+    "search": "Emeza",
+    "results": "Ingendo zihari",
+    "departure": "Irahaguruka :",
+    "destination": "Yerekeza :",
+    "time": "Isaha :",
+    "fare": "Igiciro :"
+  },
+  "profile": {
+    "title": "Konti yanjye",
+    "tickets": "Tike naguze",
+    "notifications": "Amamenyesha",
+    "language": "Guhindura ururimi",
+    "edit": "Guhindura imyirondoro",
+    "logout": "Gusohoka",
+    "delete": "Gusiba konti",
+    "alert": "Urashaka gusohoka muri iyi konti?",
+    "cancel": "Byihorere"
+  }
+}
