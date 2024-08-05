@@ -315,7 +315,7 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
                 backgroundColor: Colors.white,
                 items: availableSeats
                     .map((number) => MultiSelectItem<int>(
-                        number, "Seat#  ${number.toString()}"))
+                        number, "Seat  #${number.toString()}"))
                     .toList(),
                 title: const Text("Select seats"),
                 selectedColor: primarySwatch,
@@ -409,7 +409,7 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
                     onPressed: () {
                       ref
                           .read(bookingProvider.notifier)
-                          .bookSeats(context, ref, responseBody);
+                          .bookSeats(context, ref, responseBody,widget.schedule);
                       // Perform the booking action with responseBody
                       print(responseBody);
                     },

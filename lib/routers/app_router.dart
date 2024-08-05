@@ -58,7 +58,10 @@ final GoRouter router = GoRouter(routes: [
   ),
   GoRoute(
     path: '/payment',
-    builder: (context, state) => const PaymentScreen(),
+    builder: (context, state) {
+      final schedule = state.extra as Schedule;
+      return PaymentScreen(schedule: schedule);
+    },
   ),
   GoRoute(
     path: '/notifications',

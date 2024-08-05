@@ -51,7 +51,7 @@ class BookingNotifier extends StateNotifier<BookingsState?> {
     }
   }
 
-  Future<void> bookSeats(BuildContext context, WidgetRef ref, json) async {
+  Future<void> bookSeats(BuildContext context, WidgetRef ref, json,Schedule schedule) async {
     try {
       state = state!.copyWith(isLoading: true);
       final response = await _dio.post(
@@ -69,7 +69,7 @@ class BookingNotifier extends StateNotifier<BookingsState?> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('${response.data['message']}')),
         );
-        context.go('/payment');
+        context.go('/payment',extra: schedule);
       } else {
         throw Exception('Failed to login: ${response.statusMessage}');
       }

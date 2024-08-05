@@ -103,7 +103,7 @@ class _RiderScreenState extends ConsumerState<RiderScreen> {
                     const Text(
                       "welcome.title",
                       style: TextStyle(
-                          fontSize: 23,
+                          fontSize: 27,
                           fontWeight: FontWeight.bold,
                           color: Colors.white),
                     ).tr()

@@ -5,10 +5,12 @@ import 'package:go_router/go_router.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../constants/_assets.dart';
+import '../../models/schedule.dart';
 import '../../theme/colors.dart';
 
 class PaymentScreen extends StatelessWidget {
-  const PaymentScreen({super.key});
+  final Schedule schedule;
+  const PaymentScreen({super.key,required this.schedule});
   Future<void> _launch(Uri url) async {
     try {
       if (!await launchUrl(url,
@@ -26,7 +28,7 @@ class PaymentScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Nyabugogo - Rusizi"),
+        title:  Text("${schedule.departure} - ${schedule.destination}"),
       ),
       body: Column(
         children: [
@@ -43,7 +45,7 @@ class PaymentScreen extends StatelessWidget {
                 onPressed: () {
                   final Uri uri = Uri(
                     scheme: 'tel',
-                    path: '*182*8*1*44203#',
+                    path: '*182*8*1#',
                   );
                   _launch(uri);
                   context.go('/success');
