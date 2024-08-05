@@ -1,4 +1,4 @@
-package com.example.ritco_app
+package rw.ritco.ritco
 
 import io.flutter.embedding.android.FlutterActivity
 
