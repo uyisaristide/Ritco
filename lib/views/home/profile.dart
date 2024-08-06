@@ -90,7 +90,7 @@ class _ProfileState extends ConsumerState<Profile> {
                   title: 'profile.tickets'.tr(),
                   iconSize: 18,
                   onPressed: () {
-                    context.push('/myOrders');
+                    context.push('/tickets');
                   },
                   leadingIcon: MaterialCommunityIcons.ticket,
                   avatarColor: const Color(0xffeff4f8)),
