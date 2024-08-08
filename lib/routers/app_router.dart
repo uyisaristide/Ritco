@@ -71,4 +71,5 @@ final GoRouter router = GoRouter(routes: [
     path: '/tickets',
     builder: (context, state) => const MyTickets(),
   ),
+
 ]);
